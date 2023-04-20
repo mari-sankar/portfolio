@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mari Sankar</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/8e4da32d54.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav">
+        <a href="#default" class="logo"><span>M</span>ari <span>S</span>ankar</a>
+        <div class="nav-right">
+            <div class="side-box">
+                <div id="sidemenu" class="side-box-inner">
+                    <i class="fa-sharp fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                    <a class="nav-tab-links active-link" onclick="opentab('about')" href="#about">about</a>
+                    <a class="nav-tab-links" onclick="opentab('skill')" href="#skill">skills</a>
+                    <a class="nav-tab-links" onclick="opentab('education')" href="#education">education</a>
+                    <a class="nav-tab-links" onclick="opentab('portfolio')" href="#portfolio">portfolio</a>
+                    <a class="nav-tab-links" onclick="opentab('contact')" href="#contact">contact</a>
+                </div>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </div>    
+    </div>
+    <div class="full">
+        <div class="container-home" id="home">
+            <div class="home-col-1">
+                <img src="/my-profolio-photo.jpg">
+            </div>
+            <div class="home-text">
+                <h5>Hi, I'm <span>Mari Sankar</span></h5>
+                <h5>A <span>Software Developer</span></h5>
+                <a href="" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+        <div id="about">
+            <div class="about-left">
+                <h1>
+                    My Story
+                </h1><br>
+                <p>
+                    A portfolio is a collection of your work or achievements that demonstrates your skills, abilities, and experience in a particular field. It is often used in the context of job applications or business pitches to showcase your past work and to give potential employers or clients an idea of your capabilities.
+                </p><br>
+                <p>
+                    When creating a portfolio, it is important to choose your best work and organize it in a clear and professional manner. This may involve selecting specific projects, including descriptions of your role and responsibilities, and highlighting key accomplishments and outcomes. You can also include testimonials or references from past clients or employers to further demonstrate your skills and expertise.
+                </p><br>
+                <p>
+                    Portfolios can be created in various formats, such as a physical binder, a website, or a digital document. It is essential to consider your target audience and choose a format that best suits their needs and preferences. For example, if you are applying for a job in a creative field, a visual portfolio with samples of your work may be more appropriate, while a more traditional written portfolio may be better for a business or academic setting.
+                </p><br>
+                <p>
+                    Portfolios can be created in various formats, such as a physical binder, a website, or a digital document. It is essential to consider your target audience and choose a format that best suits their needs and preferences. For example, if you are applying for a job in a creative field, a visual portfolio with samples of your work may be more appropriate, while a more traditional written portfolio may be better for a business or academic setting.
+                </p><br>
+            </div>
+        </div>
+        <!---<div id="about">
+            <div class="container-about">
+                <div class="about-row">
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Mari</span><br>Sankar</li>
+                                <li><span>Mari</span><br>Sankar</li>
+                                <li><span>Mari</span><br>Sankar</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Mari</span><br>Sankar</li>
+                                <li><span>Mari</span><br>Sankar</li>
+                                <li><span>Mari</span><br>Sankar</li>
+                                <li><span>Mari</span><br>Sankar</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>B.Tech Computer Science and Business Systems</span><br>Rajalakshmi Engineerning College<br>2021 - 2025 (present)</li>
+                                <li><span>Higher Secondary</span><br>Sri Jayendra Swamigal Silver Jubilee Matric H.R Sec School<br>2019 - 2021</li>
+                                <li><span>Secondary</span><br>Little Flower Matric H.R Sec School<br>2006 - 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skill">
+            <div class="skills">
+                <h1>Skills</h1><br>
+                <div class="skills-tab-titles">
+                    <p class="skills-tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="skills-tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="skills-tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="skills-tab-contents" id="skills">
+                    <ul>
+                        <li><span>Mari</span><br>Sankar</li>
+                        <li><span>Mari</span><br>Sankar</li>
+                        <li><span>Mari</span><br>Sankar</li>
+                    </ul>
+                </div>
+                <div class="skills-tab-contents" id="experience">
+                    <ul>
+                        <li><span>Mari</span><br>Sankar</li>
+                        <li><span>Mari</span><br>Sankar</li>
+                        <li><span>Mari</span><br>Sankar</li>
+                        <li><span>Mari</span><br>Sankar</li>
+                    </ul>
+                </div>
+                <div class="skills-tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Tech Computer Science and Business Systems</span><br>Rajalakshmi Engineerning College<br>2021 - 2025 (present)</li>
+                        <li><span>Higher Secondary</span><br>Sri Jayendra Swamigal Silver Jubilee Matric H.R Sec School<br>2019 - 2021</li>
+                        <li><span>Secondary</span><br>Little Flower Matric H.R Sec School<br>2006 - 2019</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="education">
+            <p>sankar</p>
+        </div>
+        <div id="portfolio">
+            <div class="container-work">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="/portfolio_background.png">
+                        <div class="layer">
+                            <h3>Mari Sankar</h3>
+                            <p>Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar </p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/portfolio_background.png">
+                        <div class="layer">
+                            <h3>Mari Sankar</h3>
+                            <p>Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar </p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/portfolio_background.png">
+                        <div class="layer">
+                            <h3>Mari Sankar</h3>
+                            <p>Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar </p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/portfolio_background.png">
+                        <div class="layer">
+                            <h3>Mari Sankar</h3>
+                            <p>Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar Mari Sankar </p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                </div>
+                <a href="" class="work-btn">See more</a>
+            </div>
+        </div>--->
+        <div id="contact">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mari-sankar/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/mari-sankar"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:marisankar4002@gmail.com"><i class="fa-brands fa-google"></i></i></a>
+                <a href="https://wa.me/+916383700486"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/_mari_sankar_/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Mari Sankar P. All rights reserved.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0px";
+        }
+        function closemenu() {
+            sidemenu.style.right ="-200px"
+        }
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("actve-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("skills-tab-links")
+        var tabcontents = document.getElementsByClassName("skills-tab-contents")
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("actve-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
