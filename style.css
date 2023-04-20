@@ -89,7 +89,7 @@ body {
     margin-bottom: 77px;
 }
 .home-col-1{
-    flex: 15%;
+    flex: 30%;
 }
 .home-col-1 img{
     width: 430px;
@@ -101,7 +101,7 @@ body {
 }
 .home-text{
     padding-top: 100px;
-    flex: 40%;
+    flex: 30%;
 }
 .home-text h5{
     font-size: 38px;
