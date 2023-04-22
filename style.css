@@ -104,7 +104,7 @@ body {
     flex: 30%;
 }
 .home-text h5{
-    font-size: 38px;
+    font-size: 45px;
     font-weight: bold;
     padding: 8px;
 }
@@ -124,7 +124,7 @@ body {
     border: 2.5px solid #299DA3;
     transition: 0.5s;
     text-align: center;
-    font-size: 20px;
+    font-size: 28px;
 }
 .btn.btn2{
     display: block;
@@ -205,6 +205,12 @@ body {
     .home-text{
         flex: 30%;
     }
+    .home-text h5{
+        font-size: 38px;
+    }
+    .btn{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 825px) {
@@ -278,23 +284,15 @@ body {
 }
 
 @media screen and (max-width: 545px) {
-    body{
-        overflow-x: hidden;
-        overflow-y: scroll;
-    }
     
     /*header*/
-    .header {
-        padding: 10px 10px;
-    }
-    .header-right a {
+
+    .nav-right a {
       float: none;
       display: block;
-      padding: 0;
-      padding-top: 8px;
-    }
-    .header-right {
-      float: none;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
     }
     .fa-solid{
         display: block;
@@ -304,7 +302,7 @@ body {
         position: fixed;
         top: 0;
         right: -200px;
-        width: 200px;
+        width: 180px;
         height: 100%;
         padding-top: 50px;
         background-color: #1D2020;
@@ -372,19 +370,15 @@ body {
 }
 
 @media screen and (max-width: 420px) {
-    body{
-        overflow-x: hidden;
-        overflow-y: scroll;
-    }
+
     /*header*/
-    .header {
-        padding: 10px 10px;
-    }
-    .header-right a {
-      float: none;
-      display: block;
-      padding: 0;
-      padding-top: 8px;
+
+    .nav-right a {
+        float: none;
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
     .header-right {
       float: none;
@@ -397,7 +391,7 @@ body {
         position: fixed;
         top: 0;
         right: -200px;
-        width: 200px;
+        width: 180px;
         height: 100%;
         padding-top: 50px;
         background-color: #1D2020;
@@ -465,19 +459,15 @@ body {
 }
 
 @media screen and (max-width: 380px) {
-    body{
-        overflow-x: hidden;
-        overflow-y: scroll;
-    }
+    
     /*header*/
-    .nav {
-        padding: 10px 10px;
-    }
+
     .nav-right a {
       float: none;
       display: block;
-      padding: 0;
-      padding-top: 8px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
     }
     .fa-solid{
         display: block;
@@ -487,7 +477,7 @@ body {
         position: fixed;
         top: 0;
         right: -200px;
-        width: 200px;
+        width: 180px;
         height: 100%;
         padding-top: 50px;
         background-color: #1D2020;
