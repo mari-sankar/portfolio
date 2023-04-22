@@ -310,10 +310,6 @@ body {
         background-color: #1D2020;
         z-index: 10;
     }
-    .side-box a{
-        display: block;
-        margin: 5px;
-    }
     .side-box .fa-solid{
         float: right;
         display: block;
@@ -325,6 +321,7 @@ body {
         top: 20px;
         left: 10px;
         cursor: pointer;
+        margin: 0;
     }
     /*full*/
 
@@ -406,10 +403,6 @@ body {
         background-color: #1D2020;
         z-index: 10;
     }
-    .side-box a{
-        display: block;
-        margin: 5px;
-    }
     .side-box .fa-solid{
         float: right;
         display: block;
@@ -421,6 +414,7 @@ body {
         top: 20px;
         left: 10px;
         cursor: pointer;
+        margin: 0;
     }
     /*full*/
 
@@ -476,17 +470,14 @@ body {
         overflow-y: scroll;
     }
     /*header*/
-    .header {
+    .nav {
         padding: 10px 10px;
     }
-    .header-right a {
+    .nav-right a {
       float: none;
       display: block;
       padding: 0;
       padding-top: 8px;
-    }
-    .header-right {
-      float: none;
     }
     .fa-solid{
         display: block;
@@ -502,10 +493,6 @@ body {
         background-color: #1D2020;
         z-index: 10;
     }
-    .side-box a{
-        display: block;
-        margin: 5px;
-    }
     .side-box .fa-solid{
         float: right;
         display: block;
@@ -518,6 +505,7 @@ body {
         top: 20px;
         left: 10px;
         cursor: pointer;
+        margin: 0;
     }
     
     /*full*/
