@@ -284,7 +284,7 @@ body {
     display: inline-block;
     transition: transform 0.5s;
     padding: 0;
-    color: #080808;
+    color: #fff;
 }
 .social-icons a:hover{
     color: rgba(38, 167, 184, 0.744);
@@ -779,6 +779,7 @@ body {
         left: 10px;
         cursor: pointer;
     }
+    
     /*full*/
 
     .full{
