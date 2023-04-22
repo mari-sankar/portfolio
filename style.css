@@ -148,6 +148,9 @@ body {
     padding-top: 20px;
     font-size: 35px;
 }
+.about-left p{
+    margin-left: 10px;
+}
 
 /*skills*/
 
