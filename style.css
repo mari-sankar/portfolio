@@ -208,10 +208,6 @@ body {
 }
 
 @media screen and (max-width: 825px) {
-    /*header*/
-    .header-right{
-        padding-left: 0;
-    }
 
     /*home*/
 
@@ -248,10 +244,6 @@ body {
 }
 
 @media screen and (max-width: 780px) {
-    /*header*/
-    .header-right{
-        padding-left: 0;
-    }
 
     /*home*/
     .home-col-1 img{
@@ -290,6 +282,7 @@ body {
         overflow-x: hidden;
         overflow-y: scroll;
     }
+    
     /*header*/
     .header {
         padding: 10px 10px;
