@@ -32,7 +32,7 @@
             </div>
             <div class="home-text">
                 <h5>Hi, I'm <span>Mari Sankar</span></h5>
-                <h5>A <span>Software Developer</span></h5>
+                <h5>A <span class="multiText"></span></h5>
                 <a href="" download class="btn btn2">Download CV</a>
             </div>
         </div>
@@ -64,7 +64,7 @@
                 <a href="https://www.instagram.com/_mari_sankar_/"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <div class="copyright">
-                <p>© 2023 Mari Sankar P. All rights reserved.</p>
+                <p>© 2023 Mari Sankar. All rights reserved.</p>
             </div>
             </div>
         </div>
@@ -107,6 +107,18 @@
             event.currentTarget.classList.add("actve-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+    var typingEffect = new Typed(".multiText", {
+    strings: ["Student", "Front-end Developer","Coder", "Designer"],
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 80,
+    backDelay: 1500
+    }
+    )
+    
     </script>
 </body>
 </html>
