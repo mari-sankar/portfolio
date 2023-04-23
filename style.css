@@ -65,7 +65,7 @@ body {
     transition: 0.5s;
 }
 .nav-tab-links:hover::after{
-    width: 80%;
+    width: 85%;
 }
 .side-box .fa-solid{
     display: none;
