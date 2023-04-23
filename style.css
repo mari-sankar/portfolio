@@ -294,6 +294,9 @@ body {
       margin-left: auto;
       margin-right: auto;
     }
+    .nav-tab-links:hover::after{
+        width: 90%;
+    }
     .fa-solid{
         display: block;
         font-size: 25px;
