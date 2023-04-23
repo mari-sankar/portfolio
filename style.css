@@ -21,7 +21,7 @@ body {
     width: 100%;
 }
 .nav a{
-    font-size: 30px;
+    font-size: 35px;
     color: #fff;
     text-decoration: none; 
     padding-left: 15px;
@@ -31,7 +31,7 @@ body {
 }
 .nav a.logo span{
     color: rgba(27, 224, 250, 0.744);
-    font-size: 38px;
+    font-size: 40px;
     font-weight: bold;
 }
 .nav-right {
@@ -43,7 +43,7 @@ body {
     text-align: center;
     padding: 17px 12px 0px 0px;
     text-decoration: none;
-    font-size: 20px; 
+    font-size: 25px; 
     line-height: 25px;
     border-radius: 4px;
     justify-content: space-between;
@@ -181,7 +181,7 @@ body {
     transform: translateY(-5px);
 }
 .copyright p{
-    font-size: 18px;
+    font-size: 10px;
     text-align: center;
 }
 
