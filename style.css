@@ -74,9 +74,8 @@ body {
 /*full*/
 
 .full{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 2px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /*home*/
@@ -139,18 +138,75 @@ body {
 
 /*about*/
 
-.about-left{
+.section{
+    padding-top: 35px;
+    padding-bottom: 100px;
+}
+.section__title{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+}
+.education{
+    flex: 5px;
+    width: fit-content;
+    margin: auto;
+}
+.experience{
+    flex: 30%;
+    width: fit-content;
+    margin-left: 30px;
+    margin-right: 30px;
     font-size: 18px;
     text-align: justify;
-    margin: 65px 35px 65px 35px;
 }
-.about-left h1{
-    padding-top: 20px;
-    font-size: 35px;
+.about__title{ 
+    margin-bottom: 30px;
+    color: rgba(27, 224, 250);
 }
-.about-left p{
-    margin-left: 25px;
-    margin-right: 25px;
+.timeline__item{
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 50px;
+}
+.timeline__item::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgba(27, 224, 250);
+}
+.circle__dot{
+    position: absolute;
+    left: -10px;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    border: 2px solid rgba(27, 224, 250);
+    border-radius: 50%;
+    background-color: rgba(27, 224, 250);
+    transition: .5s;
+}
+.timeline__item:hover .circle__dot{
+    background-color: #1D2020;
+}
+.timeline__title{
+    margin-bottom: 10px;
+}
+.timeline__text{
+    margin-bottom: 20px;
+}
+.timeline__date{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: rgba(27, 224, 250, 0.744);
 }
 
 /*contact*/
@@ -242,40 +298,45 @@ body {
 
     /*about*/
 
-    .about-left p{
-        margin: 0;
+    .flex{
+        display: block;
+    }
+    .experience{
+        margin-bottom: 30px;
+    }
+    .about__title{ 
+        text-align: center;
     }
 
 }
 
 @media screen and (max-width: 780px) {
 
+    /*full*/
+
+    .full{
+        margin-top: 0px;
+    }
+
     /*home*/
 
     .container-home{
-        margin-top: 135px;
-        margin-bottom: 145px;
+        margin-top: 70px;
+        margin-bottom: 70px;
     }
-    .home-col-1 img{
-        width: 500px;
-        height: 500px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+    .home-col-1 img {
+        width: 335px;
+        height: 335px;
     }
     .home-text{
+        padding-top: 70px;
+    }
+    .home-text h5{
         text-align: center;
-        padding-top: 30px;
-    }
+        font-size: 25px;
+    }     
     .btn{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /*about*/
-    .about-left{
-        margin-left: 30px;
-        margin-right: 30px;
+        font-size: 22px;
     }
 
 }
@@ -288,16 +349,16 @@ body {
         padding-top: 10px;
     }
     .nav-right a {
-      float: none;
-      display: block;
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
+        display: block;
+        float: none;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
     .nav-tab-links:hover::after{
         width: 90%;
     }
-    .fa-solid{
+    .fa-bars,.fa-square-xmark{
         display: block;
         font-size: 25px;
     }
@@ -324,52 +385,34 @@ body {
         cursor: pointer;
         margin: 0;
     }
-    
-    /*full*/
-
-    .full{
-        margin-top: 0px;
-    }
 
     /*home*/
 
-    .home-col-1{
-        padding: 0;
-    }
     .container-home{
         margin-top: 120px;
         margin-bottom: 135px;
     }
     .home-col-1 img {
-        width: 335px;
-        height: 335px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+        width: 315px;
+        height: 315px;
     }
     .home-text{
         padding-top: 30px;
-    }
-    .home-text h5{
-        text-align: center;
-        font-size: 25px;
     }     
     .btn{
-        margin-left: auto;
-        margin-right: auto;
         font-size: 22px;
     }
 
     /*about*/
 
-    .about-left{
-        margin: 20px 5px 20px 5px;
+    .education{
+        margin-left: 30px;
+        margin-right: 30px;
     }
-    .about-left h1{
-        font-size: 30px;
-    }
-    .about-left p{
-        margin: 0;
+    .experience{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 30px;
     }
 
 }

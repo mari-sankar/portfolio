@@ -36,11 +36,15 @@
                 <a href="" download class="btn btn2">Download CV</a>
             </div>
         </div>
-        <div id="about">
-            <div class="about-left">
-                <h1>
-                    Me & My Story
-                </h1><br>
+        <section class="about section" id="about">
+
+            <h1 class="section__title">Me and My Journey</h1>
+
+            <div class="about__container container flex">
+                <div class="experience">
+                    <h3 class="about__title">
+                        <i class="fa-regular fa-address-card"></i> Little Story
+                    </h3>
                 <p>
                     A portfolio is a collection of your work or achievements that demonstrates your skills, abilities, and experience in a particular field. It is often used in the context of job applications or business pitches to showcase your past work and to give potential employers or clients an idea of your capabilities.
                 </p><br>
@@ -48,13 +52,42 @@
                     When creating a portfolio, it is important to choose your best work and organize it in a clear and professional manner. This may involve selecting specific projects, including descriptions of your role and responsibilities, and highlighting key accomplishments and outcomes. You can also include testimonials or references from past clients or employers to further demonstrate your skills and expertise.
                 </p><br>
                 <p>
-                    Portfolios can be created in various formats, such as a physical binder, a website, or a digital document. It is essential to consider your target audience and choose a format that best suits their needs and preferences. For example, if you are applying for a job in a creative field, a visual portfolio with samples of your work may be more appropriate, while a more traditional written portfolio may be better for a business or academic setting.
+                    When creating a portfolio, it is important to choose your best work and organize it in a clear and professional manner. This may involve selecting specific projects, including descriptions of your role and responsibilities, and highlighting key accomplishments and outcomes. You can also include testimonials or references from past clients or employers to further demonstrate your skills and expertise.
                 </p><br>
-                <p>
-                    Portfolios can be created in various formats, such as a physical binder, a website, or a digital document. It is essential to consider your target audience and choose a format that best suits their needs and preferences. For example, if you are applying for a job in a creative field, a visual portfolio with samples of your work may be more appropriate, while a more traditional written portfolio may be better for a business or academic setting.
-                </p><br>
+                </div>
+                <div class="education">
+                    <h3 class="about__title">
+                        <i class="fa-solid fa-graduation-cap"></i> Education
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Rajalakshmi Engineering College</h3> 
+                            <p class="timeline__text">B.Tech Computer Science and Business Systems</p>
+                            <span class="timeline__date"><i class="fa-regular fa-calendar"></i>
+                                2021 - Present
+                            </span>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Sri Jayendra Swamigal Silver Jubilee School</h3> 
+                            <p class="timeline__text">Higher Secondary</p>
+                            <span class="timeline__date"><i class="fa-regular fa-calendar"></i>
+                                2019 - 2021
+                            </span>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Little Flower School</h3>
+                             <p class="timeline__text">Secondary</p>
+                            <span class="timeline__date"><i class="fa-regular fa-calendar"></i>
+                                2018 -2019
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>                    
         <div id="contact">
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/mari-sankar/"><i class="fa-brands fa-linkedin"></i></a>
@@ -111,7 +144,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
     var typingEffect = new Typed(".multiText", {
-    strings: ["Student", "Front-end Developer","Coder", "Designer"],
+    strings: ["Student", "Front-end Developer","Software Developer", "Designer"],
     loop: true,
     typeSpeed: 100,
     backSpeed: 80,
