@@ -453,6 +453,10 @@ li .hide{
     nav .showmenu{
         opacity: 1;
     }
+    .home-text h5{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 825px) {
@@ -471,8 +475,8 @@ li .hide{
         text-align: center;
         padding-top: 100px;
     }
-    .home-text h5{
-        font-size: 35px;
+    .home-text h4{
+        font-size: 3rem;
     }
     .btn{
         margin-left: auto;
