@@ -204,7 +204,7 @@ li .hide{
 }
 .about__title{ 
     margin-bottom: 30px;
-    color: var(--primary-color);
+    color: var(--service-bg-color);
 }
 .timeline__item{
     position: relative;
