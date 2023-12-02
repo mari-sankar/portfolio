@@ -17,7 +17,6 @@ html{
     --primary-color: #fff;
     --secondary-color: #1D2020;
     --service-bg-color: #333;
-    --about-title-color: #e0cbcb;
     --hole-bg-color: #1D2020;
 }
 
@@ -26,7 +25,6 @@ html{
     --primary-color: #1e1e1e;
     --secondary-color: #fff;
     --service-bg-color: #e0cbcb;
-    --about-title-color: #333;
     --hole-bg-color: #f5f0f0;
 }
 
@@ -206,7 +204,7 @@ li .hide{
 }
 .about__title{ 
     margin-bottom: 30px;
-    color: var(--about-title-color);
+    color: var(--primary-color);
 }
 .timeline__item{
     position: relative;
@@ -584,7 +582,8 @@ li .hide{
     .home-col-1 img {
         width: 315px;
         height: 315px;
-    } 
+    }
+ 
     .btn{
         font-size: 22px;
     }
