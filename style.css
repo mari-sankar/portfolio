@@ -476,7 +476,7 @@ li .hide{
         padding-top: 100px;
     }
     .home-text h4{
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .btn{
         margin-left: auto;
@@ -519,9 +519,9 @@ li .hide{
     .home-text{
         padding-top: 70px;
     }
-    .home-text h5{
+    .home-text h4{
         text-align: center;
-        font-size: 25px;
+        font-size: 2.5rem;
     }     
     .btn{
         font-size: 22px;
@@ -626,6 +626,9 @@ li .hide{
         margin-top: 125px;
         margin-bottom: 140px;
     }     
+    .home-text h4{
+        font-size: 2rem;
+    }
 
 }
 
