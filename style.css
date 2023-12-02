@@ -452,8 +452,7 @@ li .hide{
 
     nav .showmenu{
         opacity: 1;
-    }
-    .home-text h5{
+    }.home-text h5{
         display: none;
     }
 
@@ -583,10 +582,7 @@ li .hide{
     .home-col-1 img {
         width: 315px;
         height: 315px;
-    }
-    .home-text{
-        padding-top: 30px;
-    }     
+    } 
     .btn{
         font-size: 22px;
     }
