@@ -426,8 +426,8 @@ li .hide{
         position: absolute;
         top: 100%;
         width: 100%;
-        background-color: var(--hole-bg-color);
-        border-bottom: 1px solid var(--primary-color);
+        background-color: var(--primary-color);
+        border-bottom: 1px solid var(--secondary-color);
         height: 350px;
         opacity: 0;
         transition: .6s;
