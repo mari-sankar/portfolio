@@ -463,6 +463,9 @@ form button:hover{
     .about_image{
         display: none;
     }
+    .about h1{
+        margin-bottom: 50px;
+    }
 
     /*service*/
 
