@@ -93,12 +93,29 @@
         <section class="contact" id="contact">
             <h1>Contact</h1>
             <div class="contact-content">
-                <form method="post">
+                <form>
                     <h3>GET IN TOUCH</h3>
-                    <input type="text" id="name" placeholder="Your name" required>
-                    <input type="email" id="email" placeholder="Email id" required>
-                    <input type="text" id="phone" placeholder="Phone no." required>
-                    <textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
+                    <div class="split">
+                        <div class="inner-feild">
+                            <input type="text" id="name" placeholder="Your name" class="item" autocomplete="off">
+                            <div class="error-txt">Name can't be blank</div>
+                        </div>
+                        <div class="feild inner-feild">
+                            <input type="text" id="phoneno" placeholder="Phone number" class="item"  autocomplete="off">
+                        </div>
+                    </div>
+                    <div>
+                        <input type="email" id="email" placeholder="Email id" class="item" autocomplete="off">
+                        <div class="error-txt email">Email Address can't be blank</div>
+                    </div>
+                    <div>
+                        <input type="text" id="subject" placeholder="Subject" class="item" autocomplete="off">
+                        <div class="error-txt">Subject can't be blank</div>
+                    </div>
+                    <div>
+                        <textarea id="message" rows="4" placeholder="How can I help you?" class="item" autocomplete="off"></textarea>
+                        <div class="error-txt">Message can't be blank</div>
+                    </div>
                     <button type="submit" id="btn">Send</button>
                 </form>
             </div>
@@ -114,79 +131,132 @@
             </div>
         </section>
     </div>
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu() {
-            sidemenu.style.right = "0px";
-        }
-        function closemenu() {
-            sidemenu.style.right ="-200px"
-        }
-    </script>
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links")
-        var tabcontents = document.getElementsByClassName("tab-contents")
-        
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("actve-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-        var tablinks = document.getElementsByClassName("skills-tab-links")
-        var tabcontents = document.getElementsByClassName("skills-tab-contents")
-        
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("actve-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-    var typingEffect = new Typed(".multiText", {
-    strings: ["Student","Front-end Developer","RPA Developer","Software Developer", "Designer"],
-    loop: true,
-    typeSpeed: 100,
-    backSpeed: 80,
-    backDelay: 1500
-    }
-    )
-    </script>
+    
+    <!---Home Text--->
+
     <script>
         let menu = document.querySelector(".fa-bars");
         let ul = document.querySelector("nav ul")
-
         menu.addEventListener("click",function(){
             ul.classList.toggle("showmenu");
         })
-
         let sun = document.querySelector("li .fa-sun");
         let moon = document.querySelector("li .fa-moon");
-
         moon.addEventListener("click",function(){
             document.body.classList.toggle("light-theme");
             sun.classList.toggle("show");
             moon.classList.toggle("hide");
         })
-
         sun.addEventListener("click",function(){
             document.body.classList.toggle("light-theme");
             sun.classList.toggle("show");
             moon.classList.toggle("hide");
         })
-
     </script>
+
+    <!---Menu bar--->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multiText", {
+            strings: ["Student","Front-end Developer","RPA Developer","Software Developer", "Designer"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500
+        })
+    </script>
+
+    <!---Contact--->
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+    <script>
+        const form = document.querySelector("form");
+        const name = document.getElementById("name");
+        const phoneno =document.getElementById("phoneno");
+        const email = document.getElementById("email");
+        const subject = document.getElementById("subject");
+        const msg = document.getElementById("message");
+        function sendEmail(){
+            const BodyMessage = `Hello Mari Sankar,<br><br>
+            This is ${name.value}.<br><br>
+            ${msg.value}<br><br>
+            Thanks&Regards,<br>
+            ${name.value}<br>
+            ${email.value}<br>
+            ${phoneno.value}`
+            Email.send({
+                SecureToken : "23bc1882-5f49-4a70-82b4-f405c724d177",
+                To : 'info.marisankar@gmail.com',
+                From : "info.marisankar@gmail.com",
+                Subject : subject.value,
+                Body : BodyMessage
+            }).then(
+            message => {
+                if (message== "OK"){
+                    Swal.fire({
+                        title: "Success!",
+                        text: "Message Sent Successfully!",
+                        icon: "success"
+                    });
+                }
+            }
+            );
+        }
+        function checkInputs(){
+            const items = document.querySelectorAll(".item");
+            for (const item of items){
+                if (item.value == ""){
+                    item.classList.add("error");
+                    item.parentElement.classList.add("error");
+                }
+                if(items[2].value != ""){
+                    checkEmail();
+                }
+                items[2].addEventListener("keyup", () =>{
+                    checkEmail();
+                });
+                item.addEventListener("keyup", () =>{
+                    if(item.value != ""){
+                        item.classList.remove("error");
+                        item.parentElement.classList.remove("error");
+                    }
+                    else{
+                        item.classList.add("error");
+                        item.parentElement.classList.add("error");
+                    }
+                });
+            }
+        }
+        function checkEmail(){
+            const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+            const errorTxtEmail = document.querySelector(".error-txt.email");
+            if (!email.value.match(emailRegex)){
+                email.classList.add("error");
+                email.parentElement.classList.add("error");
+                if (email.value != ""){
+                    errorTxtEmail.innerText = "Enter a valid email address";
+                }
+                else{
+                    errorTxtEmail.innerText = "Email Address can't be blank";
+                }
+            }
+            else{
+                email.classList.remove("error");
+                email.parentElement.classList.remove("error");
+            }
+        }
+        form.addEventListener("submit",(e) =>{
+            e.preventDefault();
+            checkInputs();
+            if (!name.classList.contains("error") && !email.classList.contains("error") && !subject.classList.contains("error") && !msg.classList.contains("error")){
+                sendEmail();
+                form.reset();
+                return false;
+            }
+        });         
+    </script>
+
 </body>
 </html>
