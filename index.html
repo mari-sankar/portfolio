@@ -19,6 +19,7 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#feature">Blogs</a></li>
                     <li><a href="#service">Service</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li>
@@ -54,6 +55,100 @@
                     <p>
                         Apart from my technical skills, I am a quick learner and work well in a team environment. I am always looking for opportunities to improve my skills and learn new technologies. In my free time, I enjoy playing carrom board and volunteering with local organizations.
                     </p><br>
+                </div>
+            </div>
+        </section>
+        <section class="feature" id="feature">
+            <h1>Features</h1>
+            <div class="blog">
+                <div class="wrapper">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <div class="carousel">
+                        <div class="slide-container">
+                            <div class="slide-content">
+                                <div class="sheet-wrapper">
+                                    <div class="sheet">
+                                        <div class="image-content">
+                                            <div class="overlay">
+                                                <div class="sheet-image">
+                                                    <h2 class="name">Design Thinking Workshop</h2>
+                                                    <img src="/dt_workshop.jpeg" alt="" class="sheet-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sheet-content">
+                                            <p class="description">I had an enriching experience at the Design Thinking 
+                                                workshop hosted by  Rajalakshmi Engineering.. 
+                                                <span><a href="https://www.linkedin.com/posts/mari-sankar_designthinking-innovation-empathymap-activity-7120079335687933952-nID9?utm_source=share&utm_medium=member_desktop">Read more</a></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="sheet">
+                                        <div class="image-content">
+                                            <div class="overlay">
+                                                <div class="sheet-image">
+                                                    <h2 class="name">Automation Literacy Day</h2>
+                                                    <img src="/automation_literacy_day.jpeg" alt="" class="sheet-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sheet-content">
+                                            <p class="description">A remarkable journey unfolded on August 18th, 2023, 
+                                                as Workato and Rajalakshmi Engineering.. 
+                                                <span><a href="https://www.linkedin.com/posts/mari-sankar_automation-rpa-workato-activity-7098360321869811712-BD5D?utm_source=share&utm_medium=member_desktop">Read more</a></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="sheet">
+                                        <div class="image-content">
+                                            <div class="overlay">
+                                                <div class="sheet-image">
+                                                    <h2 class="name">UiPath Workshop</h2>
+                                                    <img src="/uipath_workshop_1.jpeg" alt="" class="sheet-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sheet-content">
+                                            <p class="description">Thrilled to highlight a remarkable achievement 
+                                                by the UiPhoria Club team! Over two.. 
+                                                <span><a href="https://www.linkedin.com/posts/mari-sankar_uipath-uipathcommunity-uipathdeveloper-activity-7096868984410537984-1yhE?utm_source=share&utm_medium=member_desktop">Read more</a></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="sheet">
+                                        <div class="image-content">
+                                            <div class="overlay">
+                                                <div class="sheet-image">
+                                                    <h2 class="name">Hack-a-bot</h2>
+                                                    <img src="/Hack-a-bot.jpeg" alt="" class="sheet-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sheet-content">
+                                            <p class="description">I had an enriching experience at the Design Thinking 
+                                                workshop hosted by  Rajalakshmi Engineering.. 
+                                                <span><a href="https://www.linkedin.com/posts/mari-sankar_uipath-uipathcommunity-uipathdeveloper-activity-7056986013650321408-PDW2?utm_source=share&utm_medium=member_desktop">Read more</a></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="sheet">
+                                        <div class="image-content">
+                                            <div class="overlay">
+                                                <div class="sheet-image">
+                                                    <h2 class="name">Department Symposium</h2>
+                                                    <img src="/Symposium.jpeg" alt="" class="sheet-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sheet-content">
+                                            <div class="sheet-content">
+                                                <p class="description">Delighted to share, I recently had the opportunity 
+                                                    to lead the coordinator of “Technovation 2.0”.. 
+                                                    <span><a href="https://www.linkedin.com/posts/mari-sankar_leadership-tech-business-activity-7034927326006038529-x4wX?utm_source=share&utm_medium=member_desktop">Read more</a></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
                 </div>
             </div>
         </section>
@@ -131,8 +226,8 @@
             </div>
         </section>
     </div>
-    
-    <!---Home Text--->
+
+    <!---Menu bar--->
 
     <script>
         let menu = document.querySelector(".fa-bars");
@@ -154,7 +249,7 @@
         })
     </script>
 
-    <!---Menu bar--->
+    <!---Home Text--->
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
@@ -165,6 +260,59 @@
             backSpeed: 80,
             backDelay: 1500
         })
+    </script>
+
+    <!---Blog--->
+
+    <script>
+        const carousel = document.querySelector(".carousel"),
+        firstImg = carousel.querySelectorAll("img")[0];
+        arrowIcons = document.querySelectorAll(".wrapper i");
+
+        let isDragStart = false, prevPageX, prevScrollLeft, positionDiff;
+        let firstImgWidth = firstImg.clientWidth + 14;
+        let scrollWidth = carousel.scrollWidth - carousel.clientWidth - 0.3;
+
+        const showHideIcons = () => {
+            arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+            arrowIcons[1].style.display = carousel.scrollLeft >= scrollWidth ? "none" : "block";            
+        }
+
+        arrowIcons.forEach(icon => {
+            icon.addEventListener("click", () => {
+                carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+                setTimeout(() => showHideIcons(), 60);
+            });
+        });
+
+        const dragStart = (e) => {
+            isDragStart = true;
+            prevPageX = e.pageX || e.touches[0].pageX;
+            prevScrollLeft = carousel.scrollLeft;
+        }
+
+        const dragging = (e) => {
+            if(!isDragStart) return;
+            e.preventDefault();
+            carousel.classList.add("dragging");
+            positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+            carousel.scrollLeft = prevScrollLeft - positionDiff;
+            showHideIcons();
+        }
+
+        const dragStop = () => {
+            isDragStart = false;
+            carousel.classList.remove("dragging");
+        }
+
+        carousel.addEventListener("mousedown", dragStart);
+        carousel.addEventListener("touchstart", dragStart);
+
+        document.addEventListener("mousemove", dragging);
+        carousel.addEventListener("touchmove", dragging);
+
+        document.addEventListener("mouseup", dragStop);
+        carousel.addEventListener("touchend", dragStop);
     </script>
 
     <!---Contact--->

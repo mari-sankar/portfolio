@@ -177,29 +177,166 @@ li .hide{
 }
 .about-content{
     display: flex;
-    flex-wrap: wrap;
     column-gap: 50px;
 }
 .about_image{
-    flex: 5px;
-    width: fit-content;
-    margin: auto;
+    flex: 5px;    
 }
 .about_image img{
-    margin-left: 15px;
+    display: block;
     height: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .story{
     flex: 30%;
     width: fit-content;
-    margin: auto 30px auto 70px;
+    margin: auto 30px;
     font-size: 20px;
+}
+
+/*blog*/
+
+.feature{
+    padding: 70px 0;
+}
+.feature h1{
+    font-size: 37px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 55px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.feature h1::after{
+    content: '';
+    position: absolute;
+    width: 125px;
+    height: 3px;
+    background-color: var(--primary-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.wrapper{
+    display: flex;
+    max-width: 1080px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapper i{
+    top: 50%;
+    height: 44px;
+    width: 46px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.15rem;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    color: #080808;
+    transform: translateY(-50%);
+}
+.wrapper i:hover{
+    background: #080808;
+    color: #fff;
+}
+.wrapper i:first-child{
+    left: -22px;
+    display: none;
+}
+.wrapper i:last-child{
+    right: -22px;
+}
+.wrapper .carousel{
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging .sheet{
+    pointer-events: none;
+}
+.carousel .sheet{
+    object-fit: cover;
+}
+.carousel .sheet:first-child{
+    margin-left: 0px;
+}
+.sheet-wrapper{
+    display: flex;
+    column-gap: 25px;
+}
+.sheet{
+    min-width: 300px;
+    height: 338px;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px #707070 solid;
+}
+.sheet-content, .image-content{
+    display: flex;
+    flex-direction: column;
+}
+.image-content{
+    position: relative;
+}
+.sheet-image img{
+    margin: 20px 0 15px 0;
+    min-width: 300px;    
+    height: 180px;
+}
+
+/*
+.sheet-image{
+    position: relative;
+    height: 180px;
+    width: 100%;
+}
+.sheet-image .sheet-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}*/
+.name{
+    font-size: 16px;
+    font-weight: 500;
+    color: #cdcdcd;
+    margin: 25px 10px 0px 25px;
+}
+.description{
+    font-size: 14.5px;
+    color: #fff;
+    margin: 0 20px 0 25px;
+}
+.description span a{
+    color: #b8b6b6;
+    font-weight: 500;
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #4070F4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background: #265DF2;
 }
 
 /*service*/
 
 .service{
-    padding: 80px 60px;
+    padding: 85px 60px;
     margin: auto;
 }
 .service h1{
@@ -310,7 +447,7 @@ li .hide{
 /*contact*/
 
 .contact{
-    padding: 30px 0 0 0;
+    padding: 20px 0 0 0;
 }
 .contact h1{
     font-size: 37px;
@@ -323,7 +460,7 @@ li .hide{
 .contact h1::after{
     content: '';
     position: absolute;
-    width: 125px;
+    width: 120px;
     height: 3px;
     background-color: var(--primary-color);
     bottom: 0;
@@ -494,6 +631,12 @@ form button:hover{
         margin-bottom: 50px;
     }
 
+    /*blog*/
+    
+    .carousel img{
+        width: calc(100% / 2);
+    }
+
     /*service*/
 
     .content{
@@ -586,6 +729,12 @@ form button:hover{
 
     .story{
         margin: auto 0 30px 0;
+    }
+
+    /*blog*/
+
+    .carousel img{
+        width: 100%;
     }
 
     /*service*/
