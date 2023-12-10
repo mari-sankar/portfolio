@@ -103,7 +103,7 @@ section .title::before{
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 180px;
+    width: 170px;
     height: 3px;
     background: var(--secondary-color);
     transform: translateX(-50%);
@@ -259,7 +259,7 @@ nav i{
 /* about section styling */
 
 .about .title::after{
-    content: "who i am";
+    content: "who I am";
 }
 .about .about-content .left{
     width: 45%;
@@ -327,7 +327,7 @@ nav i{
 }
 .achievements .title::before,
 .work .title::before{
-    background: var(--primary-color);
+    width: 220px;
 }
 .achievements .title::after,
 .work .title::after{
@@ -371,12 +371,12 @@ nav i{
     color: var(--secondary-color);
 }
 .feature .title::before{
-    background: var(--primary-color);
-    color: var(--secondary-color);
+    width: 175px;
 }
 .feature .title::after{
     background: var(--primary-color);
-    content: "how I shape me";
+    content: "how I've shape";
+    font-size: 18px;
     color: var(--secondary-color);
 }
 .wrapper{
@@ -612,6 +612,7 @@ work section styling
     color: var(--text-secondary-color);
 }
 .contact .contact-content .left p{
+    font-size: 19px;
     text-align: justify;
     color: var(--text-secondary-color);
 }
