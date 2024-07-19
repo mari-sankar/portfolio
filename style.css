@@ -118,7 +118,7 @@ nav{
     position: relative;
     z-index: 99;
     background-color: var(--hole-bg-color);
-    border-bottom: 1px solid #1e1e1e;
+    /* border-bottom: 1px solid #1e1e1e; */
     font-family: 'Cormorant Garamond';
 }
 nav .logo{
@@ -727,7 +727,7 @@ footer span a:hover{
         top: 100%;
         width: 100%;
         background-color: var(--hole-bg-color);
-        /* border-bottom: 1px solid var(--secondary-color); */
+        border-bottom: 1px solid var(--secondary-color);
         height: 390px;
         opacity: 0;
         transition: .6s;
